@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0" charset="utf-8">
+	<title>mega menu</title>
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+	<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+
+	<div class="fullcontainer">
+		<div class="container">
+			<nav>
+				<div class="logo">
+					<h1>stripe</h1>
+				</div>
+				<ul class="left">
+					<li><a href="#" class="dropmenu1">product</a></li>
+					<li><a href="#">developer</a></li>
+					<li><a href="#" class="dropmenu2">company</a></li>
+					<li><a href="#">pricing</a></li>
+				</ul>
+				<ul class="right">
+					<li><a href="#" class="dropmenu3"> support</a></li>
+					<li><a href="#" class="signup"> signup</a></li>
+					<li><a href="#"> login </a></li>
+				</ul>
+				<div class="dropdownmenu">
+					<ul class="dropable1" style="display: none">
+						<li>
+							<a href="#">payment</a>
+							<a href="#" style="color: #999">scalable compute services</a>
+						</li>
+						<li>
+							<a href="#">billing</a>
+							<a href="#" style="color: #999">scalable compute services</a>
+						</li>
+						<li>
+							<a href="#">connect</a>
+							<a href="#" style="color: #999">scalable compute services</a>
+						</li>
+						<li>
+							<a href="#">Droplate</a>
+							<a href="#" style="color: #999">scalable compute services</a>
+						</li>
+						<li>
+							<a href="#">Droplate</a>
+							<a href="#" style="color: #999">scalable compute services</a>
+						</li>
+						<li>
+							<a href="#">Droplate</a>
+							<a href="#" style="color: #999">scalable compute services</a>
+						</li>
+					</ul>
+
+					<ul class="dropable2" style="display: none">
+						<li>
+							<a href="#">community overview</a>
+							<a href="#" style="color: #999"> connect,share and learn</a>
+						</li>
+						<li>
+							<a href="#">tutorials</a>
+							<a href="#" style="color: #999"> devops,and development duies</a>
+						</li>
+						<li>
+							<a href="#">question an answer</a>
+							<a href="#" style="color: #999"> development and system</a>
+						</li>
+						<li>
+							<a href="#">project overview</a>
+							<a href="#" style="color: #999"> community-built integration</a>
+						</li>
+						<li>
+							<div class="leftoption">
+								<h4>get Involved</h4>
+								<a href="#"> write for documentation</a>
+								<a href="#"> join us at meeting</a>
+							</div>
+							<div class="rightoption">
+								<h4>get Involved</h4>
+								<a href="#"> write for documentation</a>
+								<a href="#"> join us at meeting</a>
+								<p> by gaurav tiwari</p>
+							</div>
+						</li>
+			  		</ul>
+					<ul class="dropable3" style="display: none">
+						<li><a href="#"> documentation</a></li>
+						<li><a href="#"> contact support</a></li>
+						<li><a href="#"> network status</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$('.dropmenu1').click(function(){
+  			$('ul.dropable1').toggle();
+  			$('ul.dropable2').hide();
+  			$('ul.dropable3').hide();
+  		});
+  		$('.dropmenu2').click(function(){
+  			$('ul.dropable2').toggle();
+  			$('ul.dropable1').hide();
+  			$('ul.dropable3').hide();
+  		});
+  		$('.dropmenu3').click(function(){
+  			$('ul.dropable3').toggle();
+  			$('ul.dropable1').hide();
+  			$('ul.dropable2').hide();
+  		});
+  	});
+  </script>
+
+</body>
+</html>
